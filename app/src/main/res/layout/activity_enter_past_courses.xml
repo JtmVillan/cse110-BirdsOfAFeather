@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EnterPastCoursesActivity">
+
+    <TextView
+        android:id="@+id/enteryourpastclasses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="108dp"
+        android:text="@string/enter_your_past_classes"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/yearEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="95dp"
+        android:ems="10"
+        android:hint="@string/year"
+        android:inputType="number"
+        android:digits="0123456789"
+        android:maxLength="4"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enteryourpastclasses" />
+
+    <Spinner
+        android:id="@+id/quarterSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/yearEditText"
+        app:layout_constraintTop_toBottomOf="@+id/yearEditText" />
+
+    <EditText
+        android:id="@+id/courseEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:ems="10"
+        android:hint="@string/course"
+        android:inputType="textPersonName"
+        android:digits="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/quarterSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/quarterSpinner" />
+
+    <Button
+        android:id="@+id/enterCourseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:text="@string/enter"
+        android:onClick="addCoursesToSharedPreferences"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/nextScreenButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nextScreenButton" />
+
+    <Button
+        android:id="@+id/nextScreenButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="81dp"
+        android:text="@string/done"
+        android:onClick="whenFinished"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

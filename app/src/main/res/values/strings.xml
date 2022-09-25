@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Team7BirdsOfAFeather</string>
+    <string name="first_name_here">first name here</string>
+    <string name="confirm_first_name">Confirm First Name?</string>
+    <string name="confirm">confirm</string>
+    <string name="enter_your_past_classes">Enter Your Past Classes</string>
+    <string name="year">Year</string>
+    <string name="done">Done</string>
+    <string name="enter">Enter</string>
+    <string name="quarter">Quarter</string>
+    <string name="classString">Class</string>
+    <string name="course">Course</string>
+    <string name="redo_info">Redo Info</string>
+    <string name="bof_list">BoF List</string>
+    <string name="refresh">Refresh</string>
+</resources>
